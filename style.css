@@ -1,0 +1,249 @@
+/* ---------- Resets Gerais ---------- */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #1a1f36;
+    word-wrap: break-word;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Ubuntu, sans-serif;
+}
+
+body {
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+/* ---------- Elementos Básicos ---------- */
+h1 {
+    letter-spacing: -1px;
+}
+
+a {
+    color: #9054d4;
+    text-decoration: none;
+}
+
+span {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1a1f36;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+/* ---------- Estrutura Geral ---------- */
+.login-root {
+    background: #fff;
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.loginbackground {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    min-height: 692px;
+    overflow: hidden;
+}
+
+.loginbackground-gridContainer {
+    display: grid;
+    grid-template-columns: [start] 1fr [left-gutter] repeat(16, 86.6px) [left-gutter] 1fr [end];
+    grid-template-rows: [top] 1fr [top-gutter] repeat(8, 64px) [bottom-gutter] 1fr [bottom];
+    justify-content: center;
+    margin: 0 -2%;
+    transform: rotate(-12deg) skew(-12deg);
+}
+
+/* ---------- Estilo de Cores ---------- */
+.box-background--white {
+    background-color: #ffffff;
+}
+
+.box-background--blue {
+    background-color: #c06ca0b0;
+}
+
+.box-background--blue800 {
+    background-color: #e0acdc;
+}
+
+.box-background--gray100 {
+    background-color: #e3e8ee;
+}
+
+.box-background--cyan200 {
+    background-color: #ed7f91;
+}
+
+/* ---------- Elementos Estruturais ---------- */
+.box-root {
+    box-sizing: border-box;
+}
+
+.flex-flex {
+    display: flex;
+}
+
+.flex-direction--column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.center-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-justifyContent--center {
+    justify-content: center;
+}
+
+/* ---------- Espaçamentos ---------- */
+.padding-top--64 {
+    padding-top: 64px;
+}
+
+.padding-top--48 {
+    padding-top: 48px;
+}
+
+.padding-top--24 {
+    padding-top: 24px;
+}
+
+.padding-bottom--24 {
+    padding-bottom: 24px;
+}
+
+.padding-bottom--15 {
+    padding-bottom: 15px;
+}
+
+.padding-horizontal--48 {
+    padding: 48px;
+}
+
+/* ---------- Formulário ---------- */
+.formbg {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 448px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 
+        rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, 
+        rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
+}
+
+.field input {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: none;
+    border-radius: 4px;
+    outline-color: rgba(208, 84, 212, 0.5);
+    background-color: #ffffff;
+    box-shadow: 
+        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px;
+}
+
+input[type="submit"] {
+    background-color: rgb(114, 51, 139);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 
+        rgb(190, 197, 233) 0px 0px 0px 1px, 
+        rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+}
+
+.field-checkbox input {
+    width: 20px;
+    height: 15px;
+    margin-right: 5px;
+    border: none;
+}
+
+.field-checkbox label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+a.ssolink {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* ---------- Rodapé ---------- */
+.footer-link span {
+    font-size: 14px;
+    text-align: center;
+}
+
+.listing a {
+    color: #697386;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+/* ---------- Animações ---------- */
+.animationRightLeft {
+    animation: animationRightLeft 2s ease-in-out infinite;
+}
+
+.animationLeftRight {
+    animation: animationLeftRight 2s ease-in-out infinite;
+}
+
+.tans3s {
+    animation: animationLeftRight 3s ease-in-out infinite;
+}
+
+.tans4s {
+    animation: animationLeftRight 4s ease-in-out infinite;
+}
+
+@keyframes animationLeftRight {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animationRightLeft {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* ---------- Estilo de Bordas ---------- */
+.box-divider--light-all-2 {
+    box-shadow: inset 0 0 0 2px #e3e8ee;
+}
